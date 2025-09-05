@@ -369,6 +369,7 @@
             display: inline-block;
             margin-bottom: 3vh;
             margin-top: 10vh;
+            margin-left: 2rem;
             align-items: center;
             justify-content: center;
             background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
@@ -386,13 +387,22 @@
             overflow: hidden;
             min-width: 160px;
             transform-style: preserve-3d;
-        }
-
-        .download-btn:hover {
+        }        .download-btn:hover {
             background: #000000;
             color: white;
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2)
+        }
+
+        /* Mobile responsive styles for download button */
+        @media (max-width: 768px) {
+            .download-btn {
+                display: block;
+                margin: 5vh auto 2vh auto;
+                text-align: center;
+                margin-left: 0;
+                width: fit-content;
+            }
         }
     </style>
     <title>Muhammad Khizar</title>
