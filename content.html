@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Site content (Muhammad Khizar)</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/site.css" />
+</head>
+<body>
+<!--
+  ================================================================
+  CONTENT FILE
+  ================================================================
+  Everything visitors read is in this file. index.html loads it.
+  Edit the text between the tags and leave the tags themselves alone.
+  You can open this file directly in a browser to preview it styled.
+
+  Quick reference:
+    <strong>…</strong>   bold
+    <em>…</em>           italic
+    &amp;                write "&" as this
+    class="rv"           fade-in on scroll (optional, keep it on new blocks)
+
+  To ADD an entry, copy an existing block (marked COPY ME) and paste
+  it directly below that block.
+  ================================================================
+-->
+
+
+<!-- ============================ HERO ============================ -->
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <p class="role-line rv">Software &amp; Machine Learning · Robotics · LUMS</p>
+      <h1 class="rv">Muhammad Khizar</h1>
+      <p class="intro rv">
+        Computer Science junior at LUMS, specialising in <strong>AI &amp; Machine Learning</strong>
+        with a minor in <strong>Robotics</strong>. I work where generative AI, federated learning
+        and deployable systems meet. Most recently I co-authored a paper on compressing CLIP
+        conditioning vectors for one-shot federated learning, which was accepted at the abstract stage.
+      </p>
+      <div class="actions rv">
+        <a class="btn primary" href="assets/resume_europass.pdf" target="_blank" rel="noopener">View résumé</a>
+        <a class="btn line" href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="portrait rv">
+      <img src="assets/img/khizar.jpg" alt="Portrait of Muhammad Khizar" width="640" height="640" />
+    </div>
+  </div>
+</header>
+
+
+<!-- ============================ STATS ============================ -->
+<!-- Four headline numbers. Keep it at four so the grid stays even. -->
+<div class="wrap">
+  <div class="stats rv">
+    <div class="stat"><b>3.51</b><span>CGPA, LUMS</span></div>
+    <div class="stat"><b>1510</b><span>Digital SAT, first attempt</span></div>
+    <div class="stat"><b>9 A*</b><span>Cambridge O Levels</span></div>
+    <div class="stat"><b>A*</b><span>A Level Computer Science</span></div>
+  </div>
+</div>
+
+
+<!-- ======================== I. ABOUT ======================== -->
+<section id="about">
+  <div class="wrap">
+    <div class="head rv"><span class="numeral">I.<span class="sc">About</span></span><h2>Background</h2></div>
+    <div class="body">
+      <aside></aside>
+      <div>
+        <div class="prose rv">
+          <!-- The first paragraph (class="lead") is shown larger, in the serif font. -->
+          <p class="lead">
+            I care about technically rigorous work with real stakes, from understanding why a model
+            behaves the way it does to making it run within real limits.
+          </p>
+          <p>
+            At LUMS (SBASSE) my coursework covers Foundational AI/ML, Deep Learning and Advanced Topics
+            in Machine Learning, along with Digital Logic, Microcontroller Interfacing on the Tiva-C
+            platform, Mobile Robotics and Operating Systems.
+          </p>
+          <p>
+            Before the research track I built across the hardware–software boundary: penetration-testing
+            devices on ESP32, omnidirectional mecanum rovers, Arduino CO₂ monitors and photomosaic
+            generators in Python/OpenCV. I've also shipped Django backends and managed cloud deployments.
+          </p>
+          <p>
+            Outside the lab, I founded my school's first robotics society, secured corporate sponsorship
+            for Techstars Startup Weekend Lahore, and have organised large events with AIESEC and SPADES at LUMS.
+          </p>
+        </div>
+
+        <!-- Education rows: title, dates, one-line detail. -->
+        <div class="edu rv">
+          <!-- COPY ME -->
+          <div class="edu-row">
+            <h3>B.Sc. Computer Science, Lahore University of Management Sciences</h3>
+            <span class="when">2024 – 2028</span>
+            <p>CGPA 3.51 / 4.0 · AI &amp; ML focus · Robotics minor · AIESEC, SPADES</p>
+          </div>
+          <div class="edu-row">
+            <h3>Cambridge International A Levels</h3>
+            <span class="when">2022 – 2024</span>
+            <p>A* Computer Science · A Physics · A Global Perspectives &amp; Research · B Mathematics</p>
+          </div>
+          <div class="edu-row">
+            <h3>Cambridge International O Levels</h3>
+            <span class="when">2020 – 2022</span>
+            <p>9 A*: Physics, Mathematics, Biology, Chemistry, Global Perspectives, English, Urdu, Pakistan Studies, Religion</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ================== II. RESEARCH & PROJECTS ================== -->
+<section id="work">
+  <div class="wrap">
+    <div class="head rv"><span class="numeral">II.<span class="sc">Research &amp; Projects</span></span><h2>Selected work</h2></div>
+
+    <!-- ---------- Featured research (the large boxed card) ---------- -->
+    <article class="feature rv">
+      <div class="txt">
+        <span class="status sc">Abstract accepted, 2026 · later withdrawn</span>
+        <h3>STARK / SCOUT
+          <small>CLIP conditioning-vector compression for one-shot federated learning</small>
+        </h3>
+        <p>
+          In one-shot federated learning, clients upload CLIP text embeddings that condition a diffusion
+          model on the server. SCOUT compresses each token vector adaptively, keeping the fewest
+          high-magnitude dimensions that preserve a target cosine similarity. Stable Diffusion's
+          cross-attention depends on direction rather than scale, so generation quality holds while
+          upload volume falls, with no per-dataset tuning.
+        </p>
+        <p>
+          The abstract was accepted; we chose not to take the paper through to full submission and withdrew it.
+        </p>
+        <p class="meta">Co-authored with Ali Azhar · OSCAR-style synthesis · CLIP, BLIP, Stable Diffusion · NICO++, DomainNet</p>
+        <a class="link" href="https://github.com/Khizary/STARK" target="_blank" rel="noopener">Repository →</a>
+      </div>
+      <div class="data">
+        <div class="metric"><b>43%</b><span>upload reduction at θ = 0.99, with mean <i>k</i> inside the accuracy plateau</span></div>
+        <!-- Bar chart: --w is the bar length (use the same % as the label). class="bar hi" = highlighted. -->
+        <div class="bars" aria-label="Downstream accuracy by retained dimensions k">
+          <div class="cap">Downstream accuracy vs. retained dimensions</div>
+          <div class="bar"><span>k=768</span><i style="--w:73%"></i><span>73.0%</span></div>
+          <div class="bar hi"><span>k=512</span><i style="--w:71%"></i><span>71.0%</span></div>
+          <div class="bar hi"><span>k=128</span><i style="--w:71%"></i><span>71.0%</span></div>
+          <div class="bar"><span>k=64</span><i style="--w:66.3%"></i><span>66.3%</span></div>
+          <div class="bar"><span>k=32</span><i style="--w:52.1%"></i><span>52.1%</span></div>
+        </div>
+      </div>
+    </article>
+
+    <!-- ---------- Project list (lettered a., b., c. …) ---------- -->
+    <div class="list">
+
+      <!-- COPY ME -->
+      <a class="item rv" href="https://github.com/Khizary/FT-VLM-Compute" target="_blank" rel="noopener">
+        <span class="cat"><em>a.</em>LLMs &amp; VLMs</span>
+        <div>
+          <h3>Fine-tuning, vision-language models &amp; test-time compute</h3>
+          <p>Compared full fine-tuning, L2-SP, LoRA and a hand-built OPLoRA on Qwen3-0.6B; trained a
+             SigLIP→Qwen vision-language model through a three-stage curriculum; and evaluated best-of-N
+             and refinement strategies for test-time scaling.</p>
+          <div class="stack">PyTorch · Qwen3 · SigLIP · lm-eval-harness · MATH · MathVista</div>
+        </div>
+        <span class="go">→</span>
+      </a>
+
+      <a class="item rv" href="https://github.com/Khizary/atml-pa2" target="_blank" rel="noopener">
+        <span class="cat"><em>b.</em>Alignment</span>
+        <div>
+          <h3>The alignment trilemma in LLM post-training</h3>
+          <p>Studied how optimisation dynamics and feedback regimes shape the trade-offs in post-training large language models.</p>
+          <div class="stack">Python · LLM post-training</div>
+        </div>
+        <span class="go">→</span>
+      </a>
+
+      <a class="item rv" href="https://github.com/Khizary/Redford" target="_blank" rel="noopener">
+        <span class="cat"><em>c.</em>Embedded</span>
+        <div>
+          <h3>Redford</h3>
+          <p>A pocket-sized ESP32 penetration-testing device with a rotary-encoder-driven OLED interface and custom security tools.</p>
+          <div class="stack">ESP32 · C++ · Hardware design</div>
+        </div>
+        <span class="go">→</span>
+      </a>
+
+      <a class="item rv" href="https://github.com/Khizary/Mecanum-Camera-Rover" target="_blank" rel="noopener">
+        <span class="cat"><em>d.</em>Robotics</span>
+        <div>
+          <h3>Mecanum camera rover</h3>
+          <p>An omnidirectional rover with ESP32-CAM live video and mecanum-wheel holonomic control.</p>
+          <div class="stack">ESP32-CAM · Arduino · Motor control</div>
+        </div>
+        <span class="go">→</span>
+      </a>
+
+      <a class="item rv" href="https://github.com/Khizary/CO2-Logging-Alert-System" target="_blank" rel="noopener">
+        <span class="cat"><em>e.</em>Sensing</span>
+        <div>
+          <h3>CO₂ logging &amp; alert system</h3>
+          <p>An Arduino Mega monitor for CO₂, temperature and humidity, with an OLED readout and threshold alerts.</p>
+          <div class="stack">Arduino Mega · C++ · Sensors</div>
+        </div>
+        <span class="go">→</span>
+      </a>
+
+      <a class="item rv" href="https://github.com/Khizary" target="_blank" rel="noopener">
+        <span class="cat"><em>f.</em>Other</span>
+        <div>
+          <h3>Lumify, ImageMaché, Game of Life</h3>
+          <p>A Discord-controlled RGB lighting sync, a photomosaic generator, an SFML/C++ cellular automaton and more on GitHub.</p>
+        </div>
+        <span class="go">→</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ======================= III. EXPERIENCE ======================= -->
+<section id="experience">
+  <div class="wrap">
+    <div class="head rv"><span class="numeral">III.<span class="sc">Experience</span></span><h2>Leadership &amp; organisation</h2></div>
+    <div class="exp">
+
+      <!-- COPY ME -->
+      <div class="job rv">
+        <span class="when">Feb 2025 – Sep 2025</span>
+        <div>
+          <h3>Engage with AIESEC Portfolio</h3>
+          <div class="org">AIESEC at LUMS</div>
+          <ul>
+            <li>Organised and executed cultural and social events at LUMS, including a Chinese cultural festival and a local Eid festival, optimising logistics and engagement.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job rv">
+        <span class="when">Nov 2024 – Feb 2025</span>
+        <div>
+          <h3>Corporate Relations &amp; Outreach Coordinator</h3>
+          <div class="org">Techstars Startup Weekend Lahore 2025</div>
+          <ul>
+            <li>Secured corporate sponsorships through outreach and negotiation.</li>
+            <li>Coordinated hospitality for founders, mentors and investors.</li>
+            <li>Worked with marketing to maximise brand visibility.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job rv">
+        <span class="when">Aug 2024 – Jan 2025</span>
+        <div>
+          <h3>TechWars, PSIFI ’25</h3>
+          <div class="org">SPADES, LUMS</div>
+          <ul>
+            <li>Coordinated and streamlined the coding challenges for one of Pakistan's premier science festivals.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job rv">
+        <span class="when">Jul 2023 – Jul 2024</span>
+        <div>
+          <h3>President &amp; Founder, Society of Coding and Robotics</h3>
+          <div class="org">Beaconhouse Defence, Lahore</div>
+          <ul>
+            <li>Founded and scaled the school's first robotics society: organised sessions, secured approvals and acquired equipment.</li>
+            <li>Led workshops introducing robotics to AS/A Level students.</li>
+            <li>Directed an omnidirectional RC drone as the society's flagship project.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job rv">
+        <span class="when">Apr 2020 – Dec 2022</span>
+        <div>
+          <h3>Web Developer</h3>
+          <div class="org">Saeed &amp; Moeez Law Firm</div>
+          <ul>
+            <li>Built and maintained the firm's website and improved its search visibility.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="job rv">
+        <span class="when">2022 – 2023</span>
+        <div>
+          <h3>Earlier roles</h3>
+          <div class="org">Events &amp; administration</div>
+          <ul>
+            <li><b>Director Registrations &amp; Tabulations</b>, Sonnu Rehman Junior National Debates Tournament (Feb 2022). Managed registrations for 40+ teams and ran match tabulation.</li>
+            <li><b>Hospitality Team</b>, Beaconhouse International Students' Convention (Nov 2023). Handled logistics for international delegations.</li>
+            <li><b>Hospitality Team</b>, National Learner's Agency Paradigm, Beaconhouse (Jun 2023).</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================= IV. SKILLS ========================= -->
+<!-- Each group is plain comma-separated text, so just type. -->
+<section id="skills">
+  <div class="wrap">
+    <div class="head rv"><span class="numeral">IV.<span class="sc">Skills</span></span><h2>Capabilities</h2></div>
+    <div class="body">
+      <aside></aside>
+      <div>
+        <div class="skillgrid rv">
+          <div>
+            <h3><em>i.</em>Machine Learning</h3>
+            <p>LLM fine-tuning, adapter analysis, test-time scaling, knowledge distillation, safety alignment,
+               benchmarking &amp; quantization, mechanistic interpretability, Vision Transformers, federated
+               learning, domain adaptation, OOD classification, multimodal representation learning,
+               information compression, research writing</p>
+          </div>
+          <div>
+            <h3><em>ii.</em>Systems &amp; Computer Science</h3>
+            <p>Python, C++, C, Linux, OS architecture &amp; kernel drivers, algorithms &amp; analysis,
+               network-centric system design, packet routing, Django backends, cloud deployment, databases,
+               SFML / GUI, introductory x86 reverse engineering</p>
+          </div>
+          <div>
+            <h3><em>iii.</em>Electrical Engineering &amp; Robotics</h3>
+            <p>Tiva-C, ESP32, Arduino, VHDL, Proteus, digital circuit design, mobile robot localisation,
+               manipulator motion modelling, Fusion 360, MATLAB, soldering &amp; assembly</p>
+          </div>
+          <div>
+            <h3><em>iv.</em>Leadership &amp; Organisation</h3>
+            <p>Conference organisation, corporate relations, outreach &amp; PR, marketing, event management,
+               logistics, hospitality, administration</p>
+          </div>
+        </div>
+        <div class="lang rv">
+          <div><b>English</b>, bilingual (CEFR C2)</div>
+          <div><b>Urdu</b>, native</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ========================= V. CONTACT ========================= -->
+<section id="contact" class="contact">
+  <div class="wrap">
+    <span class="numeral rv">V.<span class="sc">Contact</span></span>
+    <h2 class="rv">Get in touch</h2>
+    <p class="rv">Open to research collaborations, internships and hard problems.</p>
+    <a class="mail rv" href="mailto:khizar.sent@gmail.com">khizar.sent@gmail.com</a>
+    <div class="social rv">
+      <a href="https://www.linkedin.com/in/khizary/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+      <a href="https://github.com/Khizary" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.12.83-.26.83-.57v-2c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0C17.3 4.97 18.3 5.3 18.3 5.3c.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .31.22.69.83.57A12 12 0 0012 .3"/></svg>GitHub</a>
+      <a href="assets/resume_europass.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M4 1.5h5.5L13 5v9.5H4z M9.5 1.5V5H13"/></svg>Résumé (PDF)</a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
