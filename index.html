@@ -4,165 +4,163 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Muhammad Khizar</title>
-<meta name="description" content="Muhammad Khizar: Computer Science at LUMS. Machine learning research, systems, and robotics." />
+<meta name="description" content="Muhammad Khizar. Computer Science at LUMS: machine learning research, systems and robotics." />
 <meta property="og:title" content="Muhammad Khizar" />
-<meta property="og:description" content="Computer Science at LUMS. Machine learning research, systems, and robotics." />
+<meta property="og:description" content="Computer Science at LUMS: machine learning research, systems and robotics." />
 <meta property="og:image" content="https://khizary.github.io/assets/img/khizar.jpg" />
-<meta name="theme-color" content="#f6f3ec" media="(prefers-color-scheme: light)" />
-<meta name="theme-color" content="#0f1013" media="(prefers-color-scheme: dark)" />
+<meta name="theme-color" content="#f5f6f8" media="(prefers-color-scheme: light)" />
+<meta name="theme-color" content="#0e1116" media="(prefers-color-scheme: dark)" />
 <link rel="icon" href="favicon.ico" />
 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <link rel="manifest" href="site.webmanifest" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 <style>
 :root{
-  --paper:#f6f3ec; --paper-2:#efebe1; --ink:#16171a; --ink-2:#4a4b50; --ink-3:#85868c;
-  --rule:#d9d4c7; --accent:#7a2331; --accent-soft:rgba(122,35,49,.08);
-  --serif:'Instrument Serif',Georgia,'Times New Roman',serif;
-  --sans:'Inter',system-ui,-apple-system,sans-serif;
-  --mono:'JetBrains Mono',ui-monospace,monospace;
+  --bg:#f5f6f8; --bg-2:#eceef2; --ink:#111419; --ink-2:#454a54; --ink-3:#7d838e;
+  --rule:#d5d9e0; --accent:#1e3a5f; --accent-2:#2c5282; --tint:rgba(30,58,95,.06);
+  --display:'Cormorant Garamond',Garamond,'Times New Roman',serif;
+  --text:'IBM Plex Sans',system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme:dark){
-  :root{--paper:#0f1013;--paper-2:#15161a;--ink:#ece8df;--ink-2:#b4b1aa;--ink-3:#7c7b78;
-        --rule:#2a2b30;--accent:#d99a8f;--accent-soft:rgba(217,154,143,.08)}
+  :root{--bg:#0e1116;--bg-2:#141821;--ink:#e6e9ee;--ink-2:#a9afba;--ink-3:#6f7682;
+        --rule:#252a33;--accent:#9db7d9;--accent-2:#c2d4ec;--tint:rgba(157,183,217,.07)}
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{background:var(--bg);color:var(--ink);font-family:var(--text);font-weight:400;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
 a{color:inherit}
 img{display:block;max-width:100%}
-::selection{background:var(--accent);color:var(--paper)}
-.wrap{max-width:1120px;margin:0 auto;padding:0 32px}
+::selection{background:var(--accent);color:var(--bg)}
+.wrap{max-width:1100px;margin:0 auto;padding:0 32px}
+.sc{font-variant:all-small-caps;letter-spacing:.09em;font-weight:500}
 
-/* ---------- nav ---------- */
-.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:saturate(1.4) blur(12px);-webkit-backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+/* nav */
+.nav{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .3s}
 .nav.scrolled{border-bottom-color:var(--rule)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-.mark{font-family:var(--serif);font-size:1.45rem;text-decoration:none;letter-spacing:-.01em}
-.mark span{color:var(--accent)}
-.nav ul{display:flex;gap:30px;list-style:none;font-size:.86rem;color:var(--ink-2)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+.mark{font-family:var(--display);font-weight:600;font-size:1.4rem;text-decoration:none}
+.nav ul{display:flex;gap:28px;list-style:none;font-size:.9rem;color:var(--ink-2)}
 .nav ul a{text-decoration:none;transition:color .2s}
 .nav ul a:hover{color:var(--ink)}
 .nav .cv{color:var(--accent);font-weight:500}
 
-/* ---------- hero ---------- */
-.hero{padding:96px 0 104px}
-.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:80px;align-items:end}
-.kicker{font-family:var(--mono);font-size:.75rem;letter-spacing:.06em;color:var(--ink-3);text-transform:uppercase;display:flex;align-items:center;gap:10px;margin-bottom:34px}
-.kicker::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--accent)}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.4rem,8.4vw,7.2rem);line-height:.94;letter-spacing:-.035em}
-h1 em{color:var(--accent)}
-.intro{margin-top:38px;max-width:580px;font-size:1.14rem;color:var(--ink-2);line-height:1.7}
+/* hero */
+.hero{padding:84px 0 72px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:72px;align-items:center}
+.role-line{color:var(--ink-3);font-size:.95rem;margin-bottom:22px}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(3.2rem,7.4vw,6rem);line-height:1;letter-spacing:-.01em}
+.intro{margin-top:30px;max-width:600px;font-size:1.1rem;font-weight:300;color:var(--ink-2);line-height:1.75}
 .intro strong{color:var(--ink);font-weight:500}
-.actions{display:flex;gap:12px;margin-top:40px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;font-size:.9rem;font-weight:500;text-decoration:none;border-radius:999px;border:1px solid var(--ink);transition:background .2s,color .2s,border-color .2s}
-.btn.primary{background:var(--ink);color:var(--paper)}
+.actions{display:flex;gap:12px;margin-top:36px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 22px;font-size:.88rem;font-weight:500;text-decoration:none;border:1px solid var(--ink);border-radius:2px;transition:background .2s,color .2s,border-color .2s}
+.btn.primary{background:var(--ink);color:var(--bg)}
 .btn.primary:hover{background:var(--accent);border-color:var(--accent)}
-.btn.line:hover{background:var(--ink);color:var(--paper)}
-.btn svg{width:14px;height:14px}
-figure.portrait{position:relative}
-figure.portrait img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 30%;border-radius:4px;filter:grayscale(.15) contrast(1.02)}
-figure.portrait figcaption{margin-top:12px;font-family:var(--mono);font-size:.7rem;color:var(--ink-3);display:flex;justify-content:space-between}
+.btn.line:hover{background:var(--ink);color:var(--bg)}
+.portrait img{width:100%;aspect-ratio:1/1;object-fit:cover;object-position:50% 35%;border-radius:2px;filter:grayscale(.2)}
 
 .stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule)}
-.stat{padding:26px 0 24px;border-left:1px solid var(--rule);padding-left:24px}
+.stat{padding:22px 0 20px 24px;border-left:1px solid var(--rule)}
 .stat:first-child{border-left:0;padding-left:0}
-.stat b{display:block;font-family:var(--serif);font-weight:400;font-size:2.5rem;line-height:1;letter-spacing:-.02em}
-.stat span{display:block;margin-top:8px;font-size:.8rem;color:var(--ink-3)}
+.stat b{display:block;font-family:var(--display);font-weight:600;font-size:2.3rem;line-height:1}
+.stat span{display:block;margin-top:6px;font-size:.82rem;color:var(--ink-3)}
 
-/* ---------- sections ---------- */
-section{padding:120px 0 0}
-.head{display:grid;grid-template-columns:200px 1fr;gap:40px;margin-bottom:56px;align-items:baseline}
-.num{font-family:var(--mono);font-size:.75rem;color:var(--accent);letter-spacing:.05em}
-h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.05;letter-spacing:-.025em}
-h2 em{color:var(--ink-3)}
-.body{display:grid;grid-template-columns:200px 1fr;gap:40px}
-.side{font-size:.82rem;color:var(--ink-3)}
+/* sections */
+section{padding:104px 0 0}
+.head{display:grid;grid-template-columns:180px 1fr;gap:40px;margin-bottom:48px;align-items:baseline}
+.numeral{font-family:var(--display);font-size:1.25rem;color:var(--accent)}
+.numeral .sc{font-family:var(--text);font-size:.92rem;color:var(--ink-3);margin-left:8px}
+h2{font-family:var(--display);font-weight:500;font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1.08}
+.body{display:grid;grid-template-columns:180px 1fr;gap:40px}
 
 /* about */
 .prose{max-width:660px}
-.prose p{font-size:1.08rem;color:var(--ink-2);margin-bottom:20px}
-.prose p:first-child{font-family:var(--serif);font-size:1.6rem;line-height:1.35;color:var(--ink);letter-spacing:-.01em}
-.edu{margin-top:52px;border-top:1px solid var(--rule)}
-.edu-row{display:grid;grid-template-columns:1fr auto;gap:8px 24px;padding:22px 0;border-bottom:1px solid var(--rule)}
+.prose p{font-size:1.04rem;font-weight:300;color:var(--ink-2);margin-bottom:18px}
+.prose p.lead{font-family:var(--display);font-weight:500;font-size:1.7rem;line-height:1.3;color:var(--ink)}
+.edu{margin-top:44px;border-top:1px solid var(--rule)}
+.edu-row{display:grid;grid-template-columns:1fr auto;gap:6px 24px;padding:20px 0;border-bottom:1px solid var(--rule)}
 .edu-row h3{font-size:1rem;font-weight:500}
-.edu-row .when{font-family:var(--mono);font-size:.76rem;color:var(--ink-3);white-space:nowrap}
-.edu-row p{grid-column:1/-1;font-size:.93rem;color:var(--ink-2)}
+.edu-row .when{font-size:.85rem;color:var(--ink-3);white-space:nowrap}
+.edu-row p{grid-column:1/-1;font-size:.92rem;color:var(--ink-2);font-weight:300}
 
-/* feature (research) */
-.feature{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border:1px solid var(--rule);border-radius:6px;overflow:hidden;background:var(--paper-2)}
-.feature .txt{padding:44px}
-.badge{display:inline-block;font-family:var(--mono);font-size:.7rem;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);padding:5px 10px;border-radius:999px;margin-bottom:22px}
-.feature h3{font-family:var(--serif);font-weight:400;font-size:2.3rem;line-height:1.05;letter-spacing:-.02em}
-.feature h3 small{display:block;font-family:var(--sans);font-size:.85rem;color:var(--ink-3);letter-spacing:0;margin-top:8px}
-.feature p{margin-top:20px;color:var(--ink-2);font-size:.98rem}
-.feature .link{display:inline-block;margin-top:24px;font-size:.88rem;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:1px}
-.feature .data{padding:44px;border-left:1px solid var(--rule);display:flex;flex-direction:column;justify-content:center;gap:26px}
-.metric b{font-family:var(--serif);font-weight:400;font-size:3rem;line-height:1;letter-spacing:-.02em;color:var(--accent)}
-.metric span{display:block;font-size:.85rem;color:var(--ink-2);margin-top:6px}
-.bars{display:grid;gap:8px;font-family:var(--mono);font-size:.72rem;color:var(--ink-3)}
-.bar{display:grid;grid-template-columns:52px 1fr 44px;gap:10px;align-items:center}
-.bar i{display:block;height:6px;border-radius:3px;background:var(--rule);position:relative;overflow:hidden}
-.bar i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--ink-2);border-radius:3px}
+/* feature */
+.feature{display:grid;grid-template-columns:1.15fr .85fr;border:1px solid var(--rule);background:var(--bg-2)}
+.feature .txt{padding:40px}
+.status{color:var(--accent);font-size:.9rem;margin-bottom:16px;display:block}
+.feature h3{font-family:var(--display);font-weight:600;font-size:2.2rem;line-height:1.05}
+.feature h3 small{display:block;font-family:var(--text);font-weight:400;font-size:.9rem;color:var(--ink-3);margin-top:8px}
+.feature p{margin-top:18px;color:var(--ink-2);font-size:.97rem;font-weight:300}
+.feature .meta{font-size:.86rem;color:var(--ink-3)}
+.feature .link{display:inline-block;margin-top:22px;font-size:.9rem;font-weight:500;color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor}
+.feature .data{padding:40px;border-left:1px solid var(--rule);display:flex;flex-direction:column;justify-content:center;gap:24px}
+.metric b{font-family:var(--display);font-weight:600;font-size:3.2rem;line-height:1;color:var(--accent)}
+.metric span{display:block;font-size:.88rem;color:var(--ink-2);margin-top:6px}
+.bars{display:grid;gap:9px;font-size:.78rem;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.bars .cap{margin-bottom:2px}
+.bar{display:grid;grid-template-columns:50px 1fr 44px;gap:10px;align-items:center}
+.bar i{display:block;height:5px;background:var(--rule);position:relative}
+.bar i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--ink-3)}
 .bar.hi i::after{background:var(--accent)}
 
-/* project list */
-.list{border-top:1px solid var(--rule);margin-top:56px}
-.item{display:grid;grid-template-columns:200px 1fr auto;gap:40px;padding:28px 0;border-bottom:1px solid var(--rule);text-decoration:none;transition:background .25s,padding .25s}
-.item:hover{background:var(--accent-soft)}
-.item .cat{font-family:var(--mono);font-size:.74rem;color:var(--ink-3);padding-top:6px}
-.item h3{font-family:var(--serif);font-weight:400;font-size:1.65rem;line-height:1.15;letter-spacing:-.01em}
-.item p{color:var(--ink-2);font-size:.95rem;margin-top:6px;max-width:620px}
-.item .stack{font-family:var(--mono);font-size:.72rem;color:var(--ink-3);margin-top:10px}
-.item .go{align-self:center;width:38px;height:38px;border:1px solid var(--rule);border-radius:50%;display:grid;place-items:center;transition:all .25s;color:var(--ink-2)}
-.item:hover .go{background:var(--ink);border-color:var(--ink);color:var(--paper);transform:rotate(-45deg)}
-.item .go svg{width:14px;height:14px}
+/* work list */
+.list{margin-top:48px;border-top:1px solid var(--rule)}
+.item{display:grid;grid-template-columns:180px 1fr auto;gap:40px;padding:26px 0;border-bottom:1px solid var(--rule);text-decoration:none;transition:background .25s}
+.item:hover{background:var(--tint)}
+.item .cat{font-size:.9rem;color:var(--ink-3);padding-top:5px}
+.item .cat em{font-family:var(--display);font-style:italic;font-size:1.15rem;color:var(--accent);margin-right:8px}
+.item h3{font-family:var(--display);font-weight:600;font-size:1.6rem;line-height:1.15}
+.item p{color:var(--ink-2);font-size:.95rem;font-weight:300;margin-top:6px;max-width:640px}
+.item .stack{font-size:.8rem;color:var(--ink-3);margin-top:10px}
+.item .go{align-self:center;font-size:1.1rem;color:var(--ink-3);transition:transform .25s,color .25s}
+.item:hover .go{transform:translateX(4px);color:var(--accent)}
 
 /* experience */
 .exp{border-top:1px solid var(--rule)}
-.role{display:grid;grid-template-columns:200px 1fr;gap:40px;padding:32px 0;border-bottom:1px solid var(--rule)}
-.role .when{font-family:var(--mono);font-size:.76rem;color:var(--ink-3);padding-top:7px}
-.role h3{font-family:var(--serif);font-weight:400;font-size:1.6rem;line-height:1.2;letter-spacing:-.01em}
-.role .org{font-size:.9rem;color:var(--accent);margin-top:2px}
-.role ul{list-style:none;margin-top:14px;color:var(--ink-2);font-size:.96rem;max-width:680px}
-.role li{position:relative;padding-left:20px;margin-bottom:6px}
-.role li::before{content:"";position:absolute;left:0;top:.75em;width:8px;height:1px;background:var(--ink-3)}
+.job{display:grid;grid-template-columns:180px 1fr;gap:40px;padding:30px 0;border-bottom:1px solid var(--rule)}
+.job .when{font-size:.86rem;color:var(--ink-3);padding-top:6px}
+.job h3{font-family:var(--display);font-weight:600;font-size:1.55rem;line-height:1.2}
+.job .org{font-size:.92rem;color:var(--accent);margin-top:2px}
+.job ul{list-style:none;margin-top:12px;color:var(--ink-2);font-size:.95rem;font-weight:300;max-width:680px}
+.job li{position:relative;padding-left:16px;margin-bottom:6px}
+.job li::before{content:"";position:absolute;left:0;top:.72em;width:5px;height:5px;border-radius:50%;background:var(--ink-3)}
+.job li b{font-weight:500;color:var(--ink)}
 
 /* skills */
-.skillgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:48px 56px}
-.skillgrid h3{font-size:.8rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
-.skillgrid p{color:var(--ink-2);font-size:.98rem;line-height:1.9}
-.skillgrid p span:not(:last-child)::after{content:" · ";color:var(--ink-3)}
-.lang{margin-top:56px;display:flex;gap:40px;flex-wrap:wrap;padding-top:28px;border-top:1px solid var(--rule);font-size:.9rem;color:var(--ink-2)}
+.skillgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:44px 56px}
+.skillgrid h3{font-family:var(--display);font-weight:600;font-size:1.35rem;margin-bottom:12px;padding-bottom:10px;border-bottom:1px solid var(--rule)}
+.skillgrid h3 em{font-style:italic;color:var(--accent);margin-right:8px}
+.skillgrid p{color:var(--ink-2);font-size:.96rem;font-weight:300;line-height:1.9}
+.skillgrid p span:not(:last-child)::after{content:", ";}
+.lang{margin-top:48px;display:flex;gap:40px;flex-wrap:wrap;padding-top:24px;border-top:1px solid var(--rule);font-size:.93rem;color:var(--ink-2);font-weight:300}
 .lang b{font-weight:500;color:var(--ink)}
 
 /* contact */
-.contact{padding:140px 0 120px}
-.contact h2{font-size:clamp(2.8rem,7vw,5.6rem);line-height:.98;letter-spacing:-.035em;max-width:900px}
-.contact .mail{display:inline-block;margin-top:44px;font-family:var(--serif);font-size:clamp(1.5rem,3.4vw,2.4rem);text-decoration:none;border-bottom:1px solid var(--accent);color:var(--accent);transition:opacity .2s}
+.contact{padding:120px 0 104px}
+.contact h2{font-size:clamp(2.6rem,6vw,4.4rem);margin-top:18px}
+.contact p{margin-top:16px;color:var(--ink-2);font-weight:300;max-width:520px}
+.contact .mail{display:inline-block;margin-top:36px;font-family:var(--display);font-weight:500;font-size:clamp(1.6rem,3.4vw,2.4rem);text-decoration:none;color:var(--accent);border-bottom:1px solid currentColor;transition:opacity .2s}
 .contact .mail:hover{opacity:.75}
-.social{display:flex;gap:28px;margin-top:40px;font-size:.92rem;flex-wrap:wrap}
+.social{display:flex;gap:28px;margin-top:36px;font-size:.93rem;flex-wrap:wrap}
 .social a{text-decoration:none;color:var(--ink-2);display:inline-flex;align-items:center;gap:8px}
 .social a:hover{color:var(--ink)}
 .social svg{width:16px;height:16px}
-footer{border-top:1px solid var(--rule);padding:28px 0;font-size:.8rem;color:var(--ink-3)}
+footer{border-top:1px solid var(--rule);padding:26px 0;font-size:.82rem;color:var(--ink-3)}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 /* motion */
-.rv{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
 .rv.in{opacity:1;transform:none}
 .no-js .rv{opacity:1;transform:none}
 @media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
 
-/* ---------- responsive ---------- */
+/* responsive */
 @media (max-width:960px){
-  .hero .wrap{grid-template-columns:1fr;gap:48px}
-  figure.portrait{max-width:300px;order:-1}
-  .head,.body,.role,.item{grid-template-columns:1fr;gap:10px}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .portrait{max-width:200px;order:-1}
+  .head,.body,.job,.item{grid-template-columns:1fr;gap:8px}
+  .body>aside{display:none}
   .item .go{display:none}
-  .side{display:none}
   .feature{grid-template-columns:1fr}
   .feature .data{border-left:0;border-top:1px solid var(--rule)}
   .stats{grid-template-columns:repeat(2,1fr)}
@@ -172,11 +170,12 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 @media (max-width:640px){
   .wrap{padding:0 20px}
   .nav ul li:not(.keep){display:none}
-  .hero{padding:56px 0 72px}
-  section{padding-top:88px}
-  .feature .txt,.feature .data{padding:28px}
+  .hero{padding:48px 0 60px}
+  .portrait{max-width:160px}
+  section{padding-top:80px}
+  .feature .txt,.feature .data{padding:26px}
   .skillgrid{grid-template-columns:1fr}
-  .contact{padding:100px 0 88px}
+  .contact{padding:88px 0 80px}
 }
 </style>
 </head>
@@ -184,13 +183,13 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
 <nav class="nav" id="nav">
   <div class="wrap">
-    <a class="mark" href="#top">Khizar<span>.</span></a>
+    <a class="mark" href="#top">Muhammad Khizar</a>
     <ul>
       <li><a href="#about">About</a></li>
-      <li><a href="#research">Research</a></li>
+      <li><a href="#work">Work</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li class="keep"><a class="cv" href="assets/resume_europass.pdf" target="_blank" rel="noopener">Résumé ↗</a></li>
+      <li class="keep"><a class="cv" href="assets/resume_europass.pdf" target="_blank" rel="noopener">Résumé</a></li>
     </ul>
   </div>
 </nav>
@@ -200,43 +199,41 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 <header class="hero">
   <div class="wrap">
     <div>
-      <p class="kicker rv">Computer Science · LUMS · Lahore</p>
-      <h1 class="rv">Muhammad<br /><em>Khizar</em></h1>
-      <p class="intro rv">I'm a Computer Science junior at LUMS working where <strong>generative AI</strong>, <strong>federated learning</strong> and deployable systems meet. I'm currently co-authoring a paper on compressing CLIP conditioning vectors for one-shot federated learning, and I'm grounded in years of building across the hardware–software boundary.</p>
+      <p class="role-line rv">Software &amp; Machine Learning · Robotics · LUMS</p>
+      <h1 class="rv">Muhammad Khizar</h1>
+      <p class="intro rv">Computer Science junior at LUMS, specialising in <strong>AI &amp; Machine Learning</strong> with a minor in <strong>Robotics</strong>. I work where generative AI, federated learning and deployable systems meet. I'm currently co-authoring a paper on compressing CLIP conditioning vectors for one-shot federated learning.</p>
       <div class="actions rv">
-        <a class="btn primary" href="assets/resume_europass.pdf" target="_blank" rel="noopener">View résumé
-          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12L12 4M6 4h6v6"/></svg></a>
-        <a class="btn line" href="#contact">Get in touch</a>
+        <a class="btn primary" href="assets/resume_europass.pdf" target="_blank" rel="noopener">View résumé</a>
+        <a class="btn line" href="#contact">Contact</a>
       </div>
     </div>
-    <figure class="portrait rv">
-      <img src="assets/img/khizar.jpg" alt="Portrait of Muhammad Khizar" width="768" height="960" />
-      <figcaption><span>Software &amp; Machine Learning</span><span>Robotics</span></figcaption>
-    </figure>
+    <div class="portrait rv">
+      <img src="assets/img/khizar.jpg" alt="Portrait of Muhammad Khizar" width="720" height="720" />
+    </div>
   </div>
 </header>
 
 <div class="wrap">
   <div class="stats rv">
-    <div class="stat"><b>3.51</b><span>CGPA at LUMS</span></div>
+    <div class="stat"><b>3.51</b><span>CGPA, LUMS</span></div>
     <div class="stat"><b>1510</b><span>Digital SAT, first attempt</span></div>
     <div class="stat"><b>9 A*</b><span>Cambridge O Levels</span></div>
     <div class="stat"><b>A*</b><span>A Level Computer Science</span></div>
   </div>
 </div>
 
-<!-- 01 About -->
+<!-- I. About -->
 <section id="about">
   <div class="wrap">
-    <div class="head rv"><span class="num">01 / About</span><h2>Theory with rigour,<br /><em>engineering with craft.</em></h2></div>
+    <div class="head rv"><span class="numeral">I.<span class="sc">About</span></span><h2>Background</h2></div>
     <div class="body">
-      <aside class="side">Lahore, Pakistan</aside>
+      <aside></aside>
       <div>
         <div class="prose rv">
-          <p>I care about technically rigorous work with real stakes, from understanding why a model behaves the way it does to making it run within real limits.</p>
-          <p>Before the AI research track I built penetration-testing devices on ESP32, omnidirectional mecanum rovers, Arduino CO₂ monitors and photomosaic generators in Python/OpenCV. I've also shipped Django backends and managed cloud deployments. Most of what I know I learned by building things that had to work.</p>
-          <p>At LUMS (SBASSE) my coursework covers Foundational AI/ML, Deep Learning and Advanced Topics in Machine Learning, plus Digital Logic, Microcontroller Interfacing on the Tiva-C platform, Mobile Robotics and Operating Systems.</p>
-          <p>I've also led teams. I founded my school's first robotics society, secured corporate sponsorship for Techstars Startup Weekend Lahore, and run large events with AIESEC and SPADES at LUMS.</p>
+          <p class="lead">I care about technically rigorous work with real stakes, from understanding why a model behaves the way it does to making it run within real limits.</p>
+          <p>At LUMS (SBASSE) my coursework covers Foundational AI/ML, Deep Learning and Advanced Topics in Machine Learning, along with Digital Logic, Microcontroller Interfacing on the Tiva-C platform, Mobile Robotics and Operating Systems.</p>
+          <p>Before the research track I built across the hardware–software boundary: penetration-testing devices on ESP32, omnidirectional mecanum rovers, Arduino CO₂ monitors and photomosaic generators in Python/OpenCV. I've also shipped Django backends and managed cloud deployments.</p>
+          <p>Outside the lab, I founded my school's first robotics society, secured corporate sponsorship for Techstars Startup Weekend Lahore, and have organised large events with AIESEC and SPADES at LUMS.</p>
         </div>
         <div class="edu rv">
           <div class="edu-row"><h3>B.Sc. Computer Science, Lahore University of Management Sciences</h3><span class="when">2024 – 2028</span>
@@ -251,22 +248,23 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
   </div>
 </section>
 
-<!-- 02 Research & Work -->
-<section id="research">
+<!-- II. Work -->
+<section id="work">
   <div class="wrap">
-    <div class="head rv"><span class="num">02 / Research &amp; Work</span><h2>Selected work</h2></div>
+    <div class="head rv"><span class="numeral">II.<span class="sc">Research &amp; Projects</span></span><h2>Selected work</h2></div>
 
     <article class="feature rv">
       <div class="txt">
-        <span class="badge">Paper submitted · 2026</span>
+        <span class="status sc">Paper submitted, 2026</span>
         <h3>STARK / SCOUT<small>CLIP conditioning-vector compression for one-shot federated learning</small></h3>
-        <p>In one-shot federated learning, clients upload CLIP text embeddings that condition a diffusion model on the server. SCOUT compresses each token vector adaptively: it keeps the fewest high-magnitude dimensions that preserve a target cosine similarity. Because Stable Diffusion's cross-attention cares about direction, not scale, this keeps generation quality while cutting upload volume, with no per-dataset tuning.</p>
-        <p style="font-size:.88rem;color:var(--ink-3)">Co-authored with Ali Azhar · OSCAR-style synthesis · CLIP · BLIP · Stable Diffusion · NICO++ &amp; DomainNet</p>
-        <a class="link" href="https://github.com/Khizary/STARK" target="_blank" rel="noopener">View repository ↗</a>
+        <p>In one-shot federated learning, clients upload CLIP text embeddings that condition a diffusion model on the server. SCOUT compresses each token vector adaptively, keeping the fewest high-magnitude dimensions that preserve a target cosine similarity. Stable Diffusion's cross-attention depends on direction rather than scale, so generation quality holds while upload volume falls, with no per-dataset tuning.</p>
+        <p class="meta">Co-authored with Ali Azhar · OSCAR-style synthesis · CLIP, BLIP, Stable Diffusion · NICO++, DomainNet</p>
+        <a class="link" href="https://github.com/Khizary/STARK" target="_blank" rel="noopener">Repository →</a>
       </div>
       <div class="data">
         <div class="metric"><b>43%</b><span>upload reduction at θ = 0.99, with mean <i>k</i> inside the accuracy plateau</span></div>
         <div class="bars" aria-label="Downstream accuracy by retained dimensions k">
+          <div class="cap">Downstream accuracy vs. retained dimensions</div>
           <div class="bar"><span>k=768</span><i style="--w:73%"></i><span>73.0%</span></div>
           <div class="bar hi"><span>k=512</span><i style="--w:71%"></i><span>71.0%</span></div>
           <div class="bar hi"><span>k=128</span><i style="--w:71%"></i><span>71.0%</span></div>
@@ -278,106 +276,107 @@ footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
     <div class="list">
       <a class="item rv" href="https://github.com/Khizary/FT-VLM-Compute" target="_blank" rel="noopener">
-        <span class="cat">LLMs · VLMs</span>
-        <div><h3>Fine-tuning, VLMs &amp; test-time compute</h3>
-          <p>Compared full fine-tuning, L2-SP, LoRA and a hand-built OPLoRA on Qwen3-0.6B; trained a SigLIP→Qwen vision-language model through a three-stage curriculum; and studied best-of-N and refinement strategies for test-time scaling.</p>
+        <span class="cat"><em>a.</em>LLMs &amp; VLMs</span>
+        <div><h3>Fine-tuning, vision-language models &amp; test-time compute</h3>
+          <p>Compared full fine-tuning, L2-SP, LoRA and a hand-built OPLoRA on Qwen3-0.6B; trained a SigLIP→Qwen vision-language model through a three-stage curriculum; and evaluated best-of-N and refinement strategies for test-time scaling.</p>
           <div class="stack">PyTorch · Qwen3 · SigLIP · lm-eval-harness · MATH · MathVista</div></div>
-        <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        <span class="go">→</span>
       </a>
       <a class="item rv" href="https://github.com/Khizary/atml-pa2" target="_blank" rel="noopener">
-        <span class="cat">Alignment</span>
+        <span class="cat"><em>b.</em>Alignment</span>
         <div><h3>The alignment trilemma in LLM post-training</h3>
           <p>Studied how optimisation dynamics and feedback regimes shape the trade-offs in post-training large language models.</p>
           <div class="stack">Python · LLM post-training</div></div>
-        <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        <span class="go">→</span>
       </a>
       <a class="item rv" href="https://github.com/Khizary/Redford" target="_blank" rel="noopener">
-        <span class="cat">Embedded</span>
+        <span class="cat"><em>c.</em>Embedded</span>
         <div><h3>Redford</h3>
           <p>A pocket-sized ESP32 penetration-testing device with a rotary-encoder-driven OLED interface and custom security tools.</p>
           <div class="stack">ESP32 · C++ · Hardware design</div></div>
-        <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        <span class="go">→</span>
       </a>
       <a class="item rv" href="https://github.com/Khizary/Mecanum-Camera-Rover" target="_blank" rel="noopener">
-        <span class="cat">Robotics</span>
+        <span class="cat"><em>d.</em>Robotics</span>
         <div><h3>Mecanum camera rover</h3>
           <p>An omnidirectional rover with ESP32-CAM live video and mecanum-wheel holonomic control.</p>
           <div class="stack">ESP32-CAM · Arduino · Motor control</div></div>
-        <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        <span class="go">→</span>
       </a>
       <a class="item rv" href="https://github.com/Khizary/CO2-Logging-Alert-System" target="_blank" rel="noopener">
-        <span class="cat">Sensing</span>
+        <span class="cat"><em>e.</em>Sensing</span>
         <div><h3>CO₂ logging &amp; alert system</h3>
-          <p>An Arduino Mega environmental monitor for CO₂, temperature and humidity, with an OLED readout and threshold alerts.</p>
+          <p>An Arduino Mega monitor for CO₂, temperature and humidity, with an OLED readout and threshold alerts.</p>
           <div class="stack">Arduino Mega · C++ · Sensors</div></div>
-        <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        <span class="go">→</span>
       </a>
       <a class="item rv" href="https://github.com/Khizary" target="_blank" rel="noopener">
-        <span class="cat">More</span>
-        <div><h3>Lumify, ImageMaché, Game of Life &amp; others</h3>
+        <span class="cat"><em>f.</em>Other</span>
+        <div><h3>Lumify, ImageMaché, Game of Life</h3>
           <p>A Discord-controlled RGB lighting sync, a photomosaic generator, an SFML/C++ cellular automaton and more on GitHub.</p></div>
-        <span class="go"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span>
+        <span class="go">→</span>
       </a>
     </div>
   </div>
 </section>
 
-<!-- 03 Experience -->
+<!-- III. Experience -->
 <section id="experience">
   <div class="wrap">
-    <div class="head rv"><span class="num">03 / Experience</span><h2>Leadership &amp;<br /><em>organisation</em></h2></div>
+    <div class="head rv"><span class="numeral">III.<span class="sc">Experience</span></span><h2>Leadership &amp; organisation</h2></div>
     <div class="exp">
-      <div class="role rv"><span class="when">Feb 2025 – Sep 2025</span><div>
+      <div class="job rv"><span class="when">Feb 2025 – Sep 2025</span><div>
         <h3>Engage with AIESEC Portfolio</h3><div class="org">AIESEC at LUMS</div>
         <ul><li>Organised and executed cultural and social events at LUMS, including a Chinese cultural festival and a local Eid festival, optimising logistics and engagement.</li></ul></div></div>
-      <div class="role rv"><span class="when">Nov 2024 – Feb 2025</span><div>
+      <div class="job rv"><span class="when">Nov 2024 – Feb 2025</span><div>
         <h3>Corporate Relations &amp; Outreach Coordinator</h3><div class="org">Techstars Startup Weekend Lahore 2025</div>
         <ul><li>Secured corporate sponsorships through outreach and negotiation.</li><li>Coordinated hospitality for founders, mentors and investors.</li><li>Worked with marketing to maximise brand visibility.</li></ul></div></div>
-      <div class="role rv"><span class="when">Aug 2024 – Jan 2025</span><div>
-        <h3>Coding Challenges, PSIFI ’25</h3><div class="org">SPADES, LUMS</div>
+      <div class="job rv"><span class="when">Aug 2024 – Jan 2025</span><div>
+        <h3>TechWars, PSIFI ’25</h3><div class="org">SPADES, LUMS</div>
         <ul><li>Coordinated and streamlined the coding challenges for one of Pakistan's premier science festivals.</li></ul></div></div>
-      <div class="role rv"><span class="when">Jul 2023 – Jul 2024</span><div>
+      <div class="job rv"><span class="when">Jul 2023 – Jul 2024</span><div>
         <h3>President &amp; Founder, Society of Coding and Robotics</h3><div class="org">Beaconhouse Defence, Lahore</div>
         <ul><li>Founded and scaled the school's first robotics society: organised sessions, secured approvals and acquired equipment.</li><li>Led workshops introducing robotics to AS/A Level students.</li><li>Directed an omnidirectional RC drone as the society's flagship project.</li></ul></div></div>
-      <div class="role rv"><span class="when">Apr 2020 – Dec 2022</span><div>
+      <div class="job rv"><span class="when">Apr 2020 – Dec 2022</span><div>
         <h3>Web Developer</h3><div class="org">Saeed &amp; Moeez Law Firm</div>
-        <ul><li>Built and maintained the firm's website and improved its visibility through SEO.</li></ul></div></div>
-      <div class="role rv"><span class="when">2022 – 2023</span><div>
+        <ul><li>Built and maintained the firm's website and improved its search visibility.</li></ul></div></div>
+      <div class="job rv"><span class="when">2022 – 2023</span><div>
         <h3>Earlier roles</h3><div class="org">Events &amp; administration</div>
-        <ul><li><b style="font-weight:500;color:var(--ink)">Director Registrations &amp; Tabulations</b>, Sonnu Rehman Junior National Debates Tournament (Feb 2022). Managed registrations for 40+ teams and ran match tabulation.</li>
-            <li><b style="font-weight:500;color:var(--ink)">Hospitality Team</b>, Beaconhouse International Students' Convention (Nov 2023). Handled logistics for international delegations.</li>
-            <li><b style="font-weight:500;color:var(--ink)">Hospitality Team</b>, National Learner's Agency Paradigm, Beaconhouse (Jun 2023).</li></ul></div></div>
+        <ul><li><b>Director Registrations &amp; Tabulations</b>, Sonnu Rehman Junior National Debates Tournament (Feb 2022). Managed registrations for 40+ teams and ran match tabulation.</li>
+            <li><b>Hospitality Team</b>, Beaconhouse International Students' Convention (Nov 2023). Handled logistics for international delegations.</li>
+            <li><b>Hospitality Team</b>, National Learner's Agency Paradigm, Beaconhouse (Jun 2023).</li></ul></div></div>
     </div>
   </div>
 </section>
 
-<!-- 04 Skills -->
+<!-- IV. Skills -->
 <section id="skills">
   <div class="wrap">
-    <div class="head rv"><span class="num">04 / Capabilities</span><h2>Skills</h2></div>
+    <div class="head rv"><span class="numeral">IV.<span class="sc">Skills</span></span><h2>Capabilities</h2></div>
     <div class="body">
-      <aside class="side"></aside>
+      <aside></aside>
       <div>
         <div class="skillgrid rv">
-          <div><h3>Machine Learning</h3><p><span>LLM fine-tuning</span><span>Adapter analysis</span><span>Test-time scaling</span><span>Knowledge distillation</span><span>Safety alignment</span><span>Benchmarking &amp; quantization</span><span>Mechanistic interpretability</span><span>Vision Transformers</span><span>Federated learning</span><span>Domain adaptation</span><span>OOD classification</span><span>Multimodal representation learning</span><span>Information compression</span><span>Research writing</span></p></div>
-          <div><h3>Systems &amp; Computer Science</h3><p><span>Python</span><span>C++</span><span>C</span><span>Linux</span><span>OS architecture &amp; kernel drivers</span><span>Algorithms &amp; analysis</span><span>Network-centric system design</span><span>Packet routing</span><span>Django backends</span><span>Cloud deployment</span><span>Databases</span><span>SFML / GUI</span><span>x86 assembly &amp; reverse engineering (intro)</span></p></div>
-          <div><h3>Electrical Engineering &amp; Robotics</h3><p><span>Tiva-C</span><span>ESP32</span><span>Arduino</span><span>VHDL</span><span>Proteus</span><span>Digital circuit design</span><span>Mobile robot localisation</span><span>Manipulator motion modelling</span><span>Fusion 360</span><span>MATLAB</span><span>Soldering &amp; assembly</span></p></div>
-          <div><h3>Leadership &amp; Organisation</h3><p><span>Conference organisation</span><span>Corporate relations</span><span>Outreach &amp; PR</span><span>Marketing</span><span>Event management</span><span>Logistics</span><span>Hospitality</span><span>Administration</span></p></div>
+          <div><h3><em>i.</em>Machine Learning</h3><p><span>LLM fine-tuning</span><span>adapter analysis</span><span>test-time scaling</span><span>knowledge distillation</span><span>safety alignment</span><span>benchmarking &amp; quantization</span><span>mechanistic interpretability</span><span>Vision Transformers</span><span>federated learning</span><span>domain adaptation</span><span>OOD classification</span><span>multimodal representation learning</span><span>information compression</span><span>research writing</span></p></div>
+          <div><h3><em>ii.</em>Systems &amp; Computer Science</h3><p><span>Python</span><span>C++</span><span>C</span><span>Linux</span><span>OS architecture &amp; kernel drivers</span><span>algorithms &amp; analysis</span><span>network-centric system design</span><span>packet routing</span><span>Django backends</span><span>cloud deployment</span><span>databases</span><span>SFML / GUI</span><span>introductory x86 reverse engineering</span></p></div>
+          <div><h3><em>iii.</em>Electrical Engineering &amp; Robotics</h3><p><span>Tiva-C</span><span>ESP32</span><span>Arduino</span><span>VHDL</span><span>Proteus</span><span>digital circuit design</span><span>mobile robot localisation</span><span>manipulator motion modelling</span><span>Fusion 360</span><span>MATLAB</span><span>soldering &amp; assembly</span></p></div>
+          <div><h3><em>iv.</em>Leadership &amp; Organisation</h3><p><span>Conference organisation</span><span>corporate relations</span><span>outreach &amp; PR</span><span>marketing</span><span>event management</span><span>logistics</span><span>hospitality</span><span>administration</span></p></div>
         </div>
         <div class="lang rv">
-          <div><b>English</b>: bilingual (CEFR C2)</div>
-          <div><b>Urdu</b>: native</div>
+          <div><b>English</b>, bilingual (CEFR C2)</div>
+          <div><b>Urdu</b>, native</div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Contact -->
+<!-- V. Contact -->
 <section id="contact" class="contact">
   <div class="wrap">
-    <span class="num rv">05 / Contact</span>
-    <h2 class="rv" style="margin-top:28px">Open to research,<br />internships &amp; <em style="color:var(--accent)">good problems.</em></h2>
+    <span class="numeral rv">V.<span class="sc">Contact</span></span>
+    <h2 class="rv">Get in touch</h2>
+    <p class="rv">Open to research collaborations, internships and hard problems.</p>
     <a class="mail rv" href="mailto:khizar.sent@gmail.com">khizar.sent@gmail.com</a>
     <div class="social rv">
       <a href="https://www.linkedin.com/in/khizary/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
